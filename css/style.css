@@ -29,6 +29,7 @@ a {
   text-decoration: none;
 }
 /* end global rules */
+/* start page */
 .flex {
   margin-top: 35px;
 }
@@ -99,30 +100,49 @@ a {
 .flex ul li .github {
   color: rgb(44, 44, 44);
 }
-.flex ul .youtube:hover {
-  background-color: rgb(32, 33, 36);
-  border-bottom: 5px solid rgb(245, 21, 5);
-  border-radius: 10px;
-}
-.flex ul .google .google:hover {
-  background-color: rgb(32, 33, 36);
-  border-bottom: 5px solid rgb(68, 167, 85);
-  border-radius: 10px;
-}
-.flex ul .elzero:hover {
-  background-color: rgb(32, 33, 36);
-  border-bottom: 5px solid rgb(80, 136, 206);
-  border-radius: 10px;
-}
-.flex ul .monkey:hover {
-  background-color: rgb(71, 71, 71);
-  border-bottom: 5px solid rgb(216, 185, 50);
-  border-radius: 10px;
-}
-.flex ul .github:hover {
-  background-color: rgb(23, 27, 34);
-  border-bottom: 5px solid rgb(255, 255, 255);
-  border-radius: 10px;
+
+@media (min-width: 450px) {
+  .flex ul .youtube:hover {
+    background-color: rgb(32, 33, 36);
+    border-bottom: 5px solid rgb(245, 21, 5);
+    border-radius: 10px;
+  }
+  .flex ul .google .google:hover {
+    background-color: rgb(32, 33, 36);
+    border-bottom: 5px solid rgb(68, 167, 85);
+    border-radius: 10px;
+  }
+  .flex ul .elzero:hover {
+    background-color: rgb(32, 33, 36);
+    border-bottom: 5px solid rgb(80, 136, 206);
+    border-radius: 10px;
+  }
+  .flex ul .monkey:hover {
+    background-color: rgb(71, 71, 71);
+    border-bottom: 5px solid rgb(216, 185, 50);
+    border-radius: 10px;
+  }
+  .flex ul .github:hover {
+    background-color: rgb(23, 27, 34);
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  .flex ul li:hover .youtube i {
+    color: rgb(245, 21, 5);
+  }
+  .flex ul li:hover .elzero i {
+    color: rgb(64, 138, 207);
+  }
+  .flex ul li:hover .monkey i {
+    color: rgb(221, 184, 38);
+  }
+  .flex ul li:hover .github,
+  .flex ul li:hover .github i {
+    color: white;
+  }
+  .flex ul .google:hover a i {
+    color: transparent;
+  }
 }
 .flex ul i {
   display: block;
@@ -142,22 +162,7 @@ a {
 .flex ul li .youtube i {
   color: white;
 }
-.flex ul li:hover .youtube i {
-  color: rgb(245, 21, 5);
-}
-.flex ul li:hover .elzero i {
-  color: rgb(64, 138, 207);
-}
-.flex ul li:hover .monkey i {
-  color: rgb(221, 184, 38);
-}
-.flex ul li:hover .github,
-.flex ul li:hover .github i {
-  color: white;
-}
-.flex ul .google:hover a i {
-  color: transparent;
-}
+
 .flex ul .google img {
   position: absolute;
   top: 36px;
@@ -178,19 +183,6 @@ a {
   height: 200px;
   overflow: hidden;
   position: relative;
-}
-@media (max-width: 1040px) {
-  .flex ul {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-}
-@media (min-width: 1700px) {
-  .text {
-    margin: 350px 300px;
-  }
-  .flex {
-    margin-top: 50px;
-  }
 }
 .text p {
   font-size: 50px;
@@ -235,6 +227,85 @@ a {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 450px) {
+  .flex ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    row-gap: 50px;
+    margin-left: -20px;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  .flex ul li {
+    height: 70px;
+    width: 110px;
+    position: relative;
+  }
+  .flex ul li a {
+    font-size: 15px;
+    width: 110px;
+    top: 20px;
+    border-bottom: none;
+    position: absolute;
+    transform: translate(-55px);
+    margin-top: 15px;
+  }
+  .flex ul li .github{
+    color: white;
+  }
+  .flex ul i {
+    font-size: 30px;
+    padding-bottom: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+  }
+  .flex ul li:hover {
+    transform: translateY(0);
+  }
+  .flex ul .elzero i {
+    font-size: 35px;
+    margin-top: -10px;
+    padding-bottom: 55px;
+  }
+  .flex ul .monkey i {
+    font-size: 35px;
+    margin-top: -10px;
+    padding-bottom: 55px;
+  }
+  .flex ul .google:hover img {
+    display: none;
+  }
+  .text {
+    min-width: 200px;
+    max-width: 350px;
+    height: 100px;
+    margin: 150px auto;
+    padding: 0;
+    padding-top: 13px;
+  }
+  .text p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1040px) {
+  .flex ul {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+@media (min-width: 1700px) {
+  .text {
+    margin: 350px 300px;
+  }
+  .flex {
+    margin-top: 50px;
+  }
+}
+/* end page */
+/* start animation */
 @keyframes text-1 {
   0% {
     opacity: 0;
@@ -385,3 +456,4 @@ a {
     display: block;
   }
 }
+/* end animation */
