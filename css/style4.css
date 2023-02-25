@@ -1,0 +1,387 @@
+:root {
+  --main-color: rgb(44, 44, 44);
+}
+/* start global rules */
+html {
+  background-image: url(../images/wallpaperflare.com_wallpaper\ \(5\).jpg);
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+html::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.055);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* end global rules */
+.flex {
+  margin-top: 35px;
+}
+.flex ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: center;
+  margin-left: -20px;
+  margin-right: 20px;
+}
+.flex ul li {
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 250px;
+  position: relative;
+}
+.flex ul li:hover {
+  transform: translateY(-10px);
+  border-radius: 10px;
+}
+.flex ul li:nth-child(1) {
+  background-color: rgb(245, 21, 5);
+  color: white;
+}
+.flex ul li:nth-child(2) {
+  background-color: rgb(68, 167, 85);
+  color: white;
+}
+.flex ul li:nth-child(3) {
+  background-color: rgb(80, 136, 206);
+  color: white;
+}
+.flex ul li:nth-child(4) {
+  background-color: rgb(216, 185, 50);
+  color: white;
+}
+.flex ul li:nth-child(5) {
+  background-color: rgb(255, 255, 255);
+}
+.flex ul li a {
+  font-weight: bold;
+  font-size: 25px;
+  transition: background-color 0.3s;
+  height: 100%;
+  width: 101%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
+  border-radius: 10px;
+}
+.flex ul li .youtube {
+  color: white;
+}
+.flex ul li .google {
+  color: white;
+}
+.flex ul li .elzero {
+  color: white;
+  padding-bottom: -5px;
+}
+.flex ul li .monkey {
+  color: white;
+  padding-bottom: -5px;
+}
+.flex ul li .github {
+  color: rgb(44, 44, 44);
+}
+.flex ul .youtube:hover {
+  background-color: rgb(32, 33, 36);
+  border-bottom: 5px solid rgb(245, 21, 5);
+  border-radius: 10px;
+}
+.flex ul .google .google:hover {
+  background-color: rgb(32, 33, 36);
+  border-bottom: 5px solid rgb(68, 167, 85);
+  border-radius: 10px;
+}
+.flex ul .elzero:hover {
+  background-color: rgb(32, 33, 36);
+  border-bottom: 5px solid rgb(80, 136, 206);
+  border-radius: 10px;
+}
+.flex ul .monkey:hover {
+  background-color: rgb(71, 71, 71);
+  border-bottom: 5px solid rgb(216, 185, 50);
+  border-radius: 10px;
+}
+.flex ul .github:hover {
+  background-color: rgb(23, 27, 34);
+  border-bottom: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.flex ul i {
+  display: block;
+  font-size: 100px;
+  margin-bottom: 30px;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+.flex ul .elzero i {
+  font-size: 120px;
+  margin-top: -10px;
+}
+.flex ul .monkey i {
+  font-size: 120px;
+  margin-top: -10px;
+}
+.flex ul li .youtube i {
+  color: white;
+}
+.flex ul li:hover .youtube i {
+  color: rgb(245, 21, 5);
+}
+.flex ul li:hover .elzero i {
+  color: rgb(64, 138, 207);
+}
+.flex ul li:hover .monkey i {
+  color: rgb(221, 184, 38);
+}
+.flex ul li:hover .github,
+.flex ul li:hover .github i {
+  color: white;
+}
+.flex ul .google:hover a i {
+  color: transparent;
+}
+.flex ul .google img {
+  position: absolute;
+  top: 36px;
+  left: 50.2%;
+  transform: translateX(-50%);
+  display: none;
+  transition: 0.3s;
+}
+.flex ul .google:hover img {
+  display: block;
+}
+.text {
+  background-color: rgba(221, 221, 221, 0.384);
+  min-width: 500px;
+  margin: 100px 20px;
+  border-radius: 6px;
+  padding: 20px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 1040px) {
+  .flex ul {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+@media (min-width: 1700px) {
+  .text {
+    margin: 350px 300px;
+  }
+  .flex {
+    margin-top: 50px;
+  }
+}
+.text p {
+  font-size: 50px;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.text .number-1 {
+  animation: text-1 60s linear infinite;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.text .number-2 {
+  animation: text-2 60s linear infinite;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.text .number-3 {
+  animation: text-3 60s linear infinite;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.text .number-4 {
+  animation: text-4 60s linear infinite;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.text .number-5 {
+  animation: text-5 60s linear infinite;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@keyframes text-1 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  3% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  17% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+}
+@keyframes text-2 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  23% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  37% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+}
+@keyframes text-3 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  43% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  57% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+}
+@keyframes text-4 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  63% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  77% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+}
+@keyframes text-5 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  83% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  97% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: block;
+  }
+}
