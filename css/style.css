@@ -233,8 +233,8 @@ a {
     flex-wrap: wrap;
     gap: 5px;
     row-gap: 45px;
-    margin-left: -20px;
-    margin-right: 10px;
+    margin-left: -25px;
+    margin-right: 5px;
     margin-top: 50px;
   }
   .flex ul li {
