@@ -53,19 +53,15 @@ a {
 }
 .flex ul li:nth-child(1) {
   background-color: rgb(245, 21, 5);
-  color: white;
 }
 .flex ul li:nth-child(2) {
   background-color: rgb(68, 167, 85);
-  color: white;
 }
 .flex ul li:nth-child(3) {
   background-color: rgb(80, 136, 206);
-  color: white;
 }
 .flex ul li:nth-child(4) {
   background-color: rgb(216, 185, 50);
-  color: white;
 }
 .flex ul li:nth-child(5) {
   background-color: rgb(255, 255, 255);
@@ -194,38 +190,18 @@ a {
 }
 .text .number-1 {
   animation: text-1 60s linear infinite;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
 .text .number-2 {
   animation: text-2 60s linear infinite;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
 .text .number-3 {
   animation: text-3 60s linear infinite;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
 .text .number-4 {
   animation: text-4 60s linear infinite;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
 .text .number-5 {
   animation: text-5 60s linear infinite;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
 @media (max-width: 450px) {
   html {
