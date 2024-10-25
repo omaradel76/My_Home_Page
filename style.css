@@ -1,0 +1,453 @@
+:root {
+  --main-color: rgb(44, 44, 44);
+}
+/* start global rules */
+.box {
+  background-image: url(../images/wallpaperflare.com_wallpaper\ \(5\).jpg);
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  margin-top: -16px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* end global rules */
+/* start page */
+.one {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: center;
+  padding: 40px 40px 10px 40px;
+}
+@media (max-width: 767px) {
+  .one {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  .one li {
+    border-radius: 10px;
+    transition: 0.3s;
+    height: 150px;
+    position: relative;
+  }
+}
+.one li {
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 250px;
+  position: relative;
+}
+.one li:hover {
+  transform: translateY(-10px);
+  border-radius: 10px;
+}
+.one li:nth-child(1) {
+  background-color: rgb(245, 21, 5);
+}
+.one li:nth-child(2) {
+  background-color: rgb(68, 167, 85);
+}
+.one li:nth-child(3) {
+  background-color: rgb(80, 136, 206);
+}
+.one li:nth-child(4) {
+  background-color: rgb(216, 185, 50);
+}
+.one li:nth-child(5) {
+  background-color: rgb(255, 255, 255);
+}
+.one .youtube:hover {
+  background-color: rgb(32, 33, 36);
+  border-bottom: 5px solid rgb(245, 21, 5);
+  border-radius: 10px;
+}
+.one .google .google:hover {
+  background-color: rgb(32, 33, 36);
+  border-bottom: 5px solid rgb(68, 167, 85);
+  border-radius: 10px;
+}
+.one .elzero:hover {
+  background-color: rgb(32, 33, 36);
+  border-bottom: 5px solid rgb(80, 136, 206);
+  border-radius: 10px;
+}
+.one .monkey:hover {
+  background-color: rgb(71, 71, 71);
+  border-bottom: 5px solid rgb(216, 185, 50);
+  border-radius: 10px;
+}
+.one .github:hover {
+  background-color: rgb(23, 27, 34);
+  border-bottom: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.one li:hover .youtube i {
+  color: rgb(245, 21, 5);
+}
+.one li:hover .elzero i {
+  color: rgb(64, 138, 207);
+}
+.one li:hover .monkey i {
+  color: rgb(221, 184, 38);
+}
+.one li:hover .github,
+.one li:hover .github i {
+  color: white;
+}
+.one .google:hover a i {
+  color: transparent;
+}
+.one li a {
+  font-weight: bold;
+  font-size: 25px;
+  transition: background-color 0.3s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
+  border-radius: 10px;
+}
+.one li .youtube,
+.one li .google,
+.one li .elzero,
+.one li .monkey {
+  color: white;
+}
+.one li .elzero {
+  padding-bottom: -5px;
+}
+.one li .monkey {
+  padding-bottom: -5px;
+}
+.one li .github {
+  color: rgb(44, 44, 44);
+}
+.one i {
+  display: block;
+  font-size: 100px;
+  margin-bottom: 30px;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+.one .elzero i {
+  font-size: 120px;
+  margin-top: -10px;
+}
+.one .monkey i {
+  font-size: 120px;
+  margin-top: -10px;
+}
+.one li .youtube i {
+  color: white;
+}
+
+.one .google img {
+  position: absolute;
+  top: 36px;
+  left: 50.2%;
+  transform: translateX(-50%);
+  display: none;
+  transition: 0.3s;
+}
+.one .google:hover img {
+  display: block;
+}
+.two {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 0;
+}
+.two li {
+  padding: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 6px;
+  height: 80px;
+
+}
+.two li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two .fontawesome {
+  background-color: rgb(240, 241, 243);
+  font-size: 28px;
+  transition: 0.3s;
+}
+.two .fontawesome:hover {
+  background-color: rgb(50, 108, 188);
+}
+.two .fontawesome:hover a {
+  color: rgb(240, 241, 243);
+}
+.two .fontawesome a {
+  color: rgb(50, 108, 188);
+  font-weight: bold;
+}
+.two .w3schools {
+  background-color: rgb(255, 255, 255);
+  font-size: 28px;
+  transition: 0.3s;
+}
+.two .w3schools:hover {
+  background-color: rgb(43, 151, 99);
+}
+.two .w3schools:hover a {
+  color: rgb(255, 255, 255);
+}
+.two .w3schools a {
+  color: rgb(43, 151, 99);
+  font-weight: bold;
+}
+.two .edabit {
+  background-color: rgb(67, 183, 78);
+  transition: 0.3s;
+}
+.two .edabit:hover {
+  background-color: white;
+}
+.two .edabit:hover a {
+  color: rgb(67, 183, 78);
+}
+.two .hakerrank {
+  background-color: rgb(247, 248, 253);
+  font-size: 27px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.two .hakerrank:hover {
+  background-color: rgb(15, 20, 30);
+}
+.two .hakerrank a {
+  color: rgb(15, 20, 30);
+}
+.two .hakerrank:hover a {
+  color: rgb(247, 248, 253);
+}
+.two .leetcode {
+  background-color: rgb(40, 40, 40);
+  font-size: 28px;
+  transition: 0.3s;
+}
+.two .leetcode:hover {
+  background-color: rgb(247, 164, 40);
+}
+.two .leetcode a {
+  color: rgb(247, 164, 40);
+  font-weight: bold;
+}
+.two .leetcode:hover a {
+  color: rgb(40, 40, 40);
+}
+.text {
+  background-color: rgba(221, 221, 221, 0.226);
+  min-width: 500px;
+  margin: 350px 20px;
+  border-radius: 6px;
+  padding: 20px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.text p {
+  font-size: 50px;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.text .number-1 {
+  animation: text-1 60s linear infinite;
+}
+.text .number-2 {
+  animation: text-2 60s linear infinite;
+}
+.text .number-3 {
+  animation: text-3 60s linear infinite;
+}
+.text .number-4 {
+  animation: text-4 60s linear infinite;
+}
+.text .number-5 {
+  animation: text-5 60s linear infinite;
+}
+
+/* end page */
+/* start animation */
+@keyframes text-1 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  3% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  17% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+}
+@keyframes text-2 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  23% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  37% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+}
+@keyframes text-3 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  43% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  57% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+}
+@keyframes text-4 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  63% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  77% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: none;
+  }
+}
+@keyframes text-5 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(15px);
+    display: block;
+  }
+  83% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  97% {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+    display: block;
+  }
+}
+/* end animation */
