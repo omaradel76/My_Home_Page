@@ -264,6 +264,21 @@ a {
 .two .leetcode:hover a {
   color: rgb(40, 40, 40);
 }
+.two .googlefonts {
+  background-color: rgb(32, 33, 36);
+  font-size: 28px;
+  transition: 0.3s;
+}
+.two .googlefonts:hover {
+  background-color: rgb(68, 167, 85);
+}
+.two .googlefonts a {
+  color: rgb(68, 167, 85);
+  font-weight: bold;
+}
+.two .googlefonts:hover a {
+  color: rgb(32, 33, 36);
+}
 .text {
   background-color: rgba(221, 221, 221, 0.226);
   min-width: 500px;
