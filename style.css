@@ -199,14 +199,19 @@ a {
   font-size: 28px;
   transition: 0.3s;
 }
-.two .fontawesome:hover {
+.two .fontawesome {
   background-color: rgb(50, 108, 188);
+  font-size: 28px;
+  transition: 0.3s;
+}
+.two .fontawesome:hover {
+  background-color: rgb(240, 241, 243);
 }
 .two .fontawesome:hover a {
-  color: rgb(240, 241, 243);
+  color: rgb(50, 108, 188);
 }
 .two .fontawesome a {
-  color: rgb(50, 108, 188);
+  color: rgb(240, 241, 243);
   font-weight: bold;
 }
 .two .w3schools {
